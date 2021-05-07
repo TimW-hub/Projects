@@ -1,0 +1,21 @@
+h1 {
+    font-family: Haettenschweiler;
+    font-size: 50px;
+    margin: 0;
+}
+
+h6 {
+    font-family: Verdana;
+}
+
+img {
+    margin: 20px;
+    border-radius: 0 100px 0 150px;
+    border:dotted;
+}
+
+.footer {
+    background-color: whitesmoke;
+    position:absolute;
+    bottom:0;
+}
