@@ -1,0 +1,20 @@
+{
+    "name": "silverstripe-themes/cb-base-theme",
+    "description": "Some basic, clean HTML and CSS",
+    "type": "silverstripe-theme",
+    "keywords": ["silverstripe", "theme"],
+    "license": "BSD-3-Clause",
+    "author": "Christopher Bartlett",
+    "version": "10 May 2021",
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": ">=4.7"
+    },
+    "extra": {
+        "expose": [
+            "css",
+            "images",
+            "javascript"
+        ]
+    }
+}

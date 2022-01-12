@@ -1,0 +1,145 @@
+
+
+#homepage-promotext {
+	display: none;
+}
+
+main {
+	padding: 1rem 3rem;
+}
+
+main p {
+	line-height: 1.5rem;
+}
+
+.homepage-loop {
+	max-width: 30rem;
+	margin: 1rem auto 3rem auto;
+}
+
+.homepage-loop .image {
+	outline-style: solid;
+	outline-color: #FCEFE3;
+	outline-width: 8px;
+	padding-bottom: 100%;
+	position: relative;
+}
+
+.homepage-loop a {
+	display: block;
+	width: 50%;
+	margin: 1.5rem auto;
+}
+
+.readmore-btn {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 0.5rem;
+	border: 3px solid #CFB199;
+	background-color: #FCEFE3;
+}
+
+main img {
+	position: absolute;
+	object-fit: cover;
+}
+
+.image-large {
+	margin-top: 3rem;
+}
+
+@media screen and (min-width: 60em) {
+	
+	/* 2 column Layout for homepgae content, use $EvenOdd to alternate orientation */
+	/* GRID LAYOUT */
+	
+	.HomePage {
+		grid-template-rows: 0 26rem 0 1fr 9.5rem;
+	}
+	
+	.HomePage main {
+		padding-top: 4rem;
+	}
+	
+	.homepage-loop {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 88rem;
+	}
+
+	.homepage-loop .odd {
+		grid-column: 1;
+	}
+	
+	.homepage-loop .even {
+		grid-column: 2;
+	}
+	
+	.info-blog {
+		grid-row: 1;
+	}
+	
+	.image-large {
+		grid-row: 1 / 3;
+	}
+	
+	/* Other layout settings */
+	
+	.info-blog.odd {
+		padding-right: 2rem;
+	}
+	
+	.info-blog.even {
+		padding-left: 2rem;
+	}
+	
+	.image-large {
+		margin-top: 0;
+	}
+	
+	.homepage-loop {
+		margin: 2rem auto 5rem auto;
+	}
+	
+	
+}
+
+@media screen and (min-width: 88em) {
+
+	.HomePage {
+		grid-template-rows: 0 95vh 0 1fr 9.5rem;     
+        grid-template-columns: 1fr 65rem 1fr;
+    }
+	
+	#homepage-promotext {
+		display: block;
+		position: absolute;
+		right: 2rem;
+		bottom: 4rem;
+	}
+	
+	.homepage-loop {
+		margin: 7rem auto;
+	}
+	
+	.homepage-loop h2 {
+		margin-top: 1rem;
+		font-size: 2rem;
+	}
+	
+	.homepage-loop p {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+	
+	.HomePage #secondary-nav {
+		top: -7rem;
+	}
+	
+	.HomePage .socials-img {
+		height: 5rem;
+		margin-left: 2rem;
+	}
+	
+}

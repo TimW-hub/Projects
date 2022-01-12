@@ -1,0 +1,21 @@
+/* BLOG SPECIFIC CSS */
+
+.post-summary, .content-container, article:not(.content-container article) {
+    padding: 1rem;
+    background-color: white;
+    border: 3px solid #FCEFE3;
+    color: #281C15;
+}
+
+.post-summary h2 a {
+    color: #281C15;
+}
+
+.post-summary {
+    background-color: #FCEFE3;
+    margin: 2rem 0;
+}
+
+article {
+    margin: 4rem 0;
+}

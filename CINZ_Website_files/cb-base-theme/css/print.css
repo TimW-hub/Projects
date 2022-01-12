@@ -1,0 +1,26 @@
+@media only print {
+	
+aside, footer, #logo, #header-img {
+	display: none;
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+    font-size: 12px;
+    color: #000;
+}
+
+h1, h2, h3 {
+    font-family: Helvetica, Arial;
+}
+
+header h1, #tagline, .typography h1, .typography h2, a, .typography a {
+    color: #000;
+}
+
+
+}

@@ -1,0 +1,45 @@
+/* LANDING PAGE SPECIFIC CSS */
+
+
+
+.subpage-preview {
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+
+.subpage-preview img {
+    position: relative;
+    object-fit: cover;
+    object-position: top;
+    height: 22rem;
+    width: 90%;
+    margin: 0 auto;
+    border: 3px solid #654634;
+}
+
+.subpage-preview h2 {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 400;
+    margin: 0;
+}
+
+@media screen and (min-width: 60em) {
+
+    #lp-preview-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .subpage-preview {
+        grid-row: 1;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,21 @@
+/**
+ * This support file is used to style the WYSIWYG editor in the CMS
+ */
+
+body.mceContentBody {
+	font-size: 1rem;
+}
+
+/* WYSIWYG EDITOR ALIGNMENT CLASSES 
+-------------------------------------------- */
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}

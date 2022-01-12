@@ -1,0 +1,67 @@
+/* DEFAULTS */
+
+/* Apply a natural box layout model to all elements, but allowing components to change it.
+ */
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+ul, ol {
+	list-style-position: inside;
+}
+
+nav ul, footer ul {
+	list-style-type: none;
+}
+
+
+/* NAVIGATION */
+
+form#SearchForm_SearchForm {
+    display: none;
+}
+
+.socials-img {
+	border-radius: 50%;
+}
+
+#rtt-icon {
+	width: 100%;
+}
+
+#top {
+	display: hidden;
+}
+
+/* IMAGES */
+
+img {
+	margin: 0;
+	width: 100%;
+}
+
+/* FORMS */
+
+aside input[type=text], aside input[type=email], aside textarea {
+	width: 100%;
+}
+
+#SearchForm_SearchForm div.field {
+	margin: 0;
+}
+
+main ul {
+	margin-bottom: 1em;
+}
+
+#SearchResults li {
+    margin-bottom: 1em;
+}
+
+#SearchResults li > p {
+    margin-bottom: 0;
+}

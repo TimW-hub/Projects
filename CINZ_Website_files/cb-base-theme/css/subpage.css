@@ -1,0 +1,23 @@
+/* SUBPAGE SPECIFIC CSS */
+
+#subpage-content img {
+    position: relative;
+    display: block;
+    width: 80%;
+    margin: 2rem auto;
+    border: 9px solid #FCEFE3;
+}
+
+@media screen and (min-width: 60em) {
+
+    #subpage-content img {
+
+        width: 40%;
+        float: right;
+        margin: 0 0 1rem 2rem;
+    }
+
+    #subpage-content {
+        overflow: auto;
+    }
+}

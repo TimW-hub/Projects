@@ -1,0 +1,460 @@
+/* DEFAULT LAYOUT - SINGLE COLUMN */
+
+header, main, .sidebar, footer {
+    padding: 1em 1em 0 1em;
+}
+
+main, .sidebar {
+    width: 42rem;
+    max-width: 100%;
+    margin: 0 auto;
+	position: relative;
+}
+
+header div {
+    z-index: 200;
+}
+
+/* COLOUR SCHEME */
+
+header {
+    background-image: url("../images/violin.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+header a {
+	color: #fff;
+}
+
+#main-menu {
+    background-color: #281C15;
+}
+
+#secondary-nav {
+	background-color: #281C15;
+}
+
+body {
+	background-color: #FCF8F7;
+}
+
+#main-menu a {
+    color: #FCF8F7;
+}
+
+#main-menu a.current, #main-menu a:hover {
+    color: #CFB199;
+}
+
+.sidebar {
+	background-color: #f45f21;
+}
+
+footer {
+    background-color: #FCEFE3; 	
+}
+
+footer, footer a {
+	color: #654634;
+}
+
+.socials-img:hover {
+    filter:saturate(50%);
+    outline: 2px solid #654634;
+}
+
+
+/* MOBILE MENU */
+
+.nav-open-button {
+	display: none;
+}
+
+#main-menu {
+    height: 0;
+    width: 100%; /* 0 width - change this with JavaScript */
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0;
+	padding-right: 0;
+    transition: 0.1s; /* Transition effect to slide in the sidenav */
+	visibility: hidden;
+}
+
+#main-menu.menu-open {
+    height: 100%;
+	visibility: visible;
+}
+
+#main-menu ul {
+	white-space: nowrap;
+}
+
+#main-menu li {
+    line-height: 1.2;
+    border-bottom: 1px solid #CFB199;
+}
+
+#main-menu ul {
+    border-top: 1px solid #CFB199;
+}
+
+#main-menu li:hover {
+	background-color: #654634;
+}
+
+
+
+#main-menu form#SearchForm_SearchForm {
+    display: block;
+}
+
+#main-menu li a {
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: 1.25rem;
+    display: block;
+	text-align: center;
+}
+
+#main-menu li.search {
+    padding: 0.5em 0.5em 0.5em 2em;
+}
+
+/* Position and style the menu buttons */
+#menu-button {
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+	
+	/* If the menu button should scroll with the page, change the position to fixed and adjust its top and right position to 0. */
+    /* position: absolute; */
+    /* top: 1rem; */
+    /* right: 1rem; */
+}
+
+#menu-button-b {
+	display: none;
+}
+
+#main-menu .closebtn {
+    font-size: 3em;
+    line-height: 1;
+    text-decoration: none;
+    padding: 0;
+    position: absolute;
+	z-index: 100;
+    top: -10rem;
+    left: 1rem;
+}
+
+#secondary-nav {
+	padding: 0.5rem 0.5rem 0.2rem 1.9rem;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.socials-img {
+	height: 3rem;
+	width: auto;
+	margin: 0 0.5rem;
+}
+/* END MOBILE MENU */
+
+
+/* Holder page pattern */
+
+.holder-page-section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* MOBILE GENERAL LAYOUT */
+
+footer {
+	padding: 1rem 2.5rem;
+	display: flex;
+	flex-direction: horizontal;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer > a {
+	width: 20%;
+}
+
+#copyright-info {
+    display: none;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/* EARLY MEDIUM LAYOUT CHANGES*/
+/* Move Header & footer elements and adjust scaling of main content so it doesn't get too big before moving */
+
+@media screen and (min-width: 40em) {
+
+	#menu-button {
+		display: none;
+	}
+
+	#menu-button-b {
+		display: block;
+		position: fixed;
+		top: 0.5rem;
+		right: 0.5rem;
+		font-size: 3rem;
+		color: #fff;
+		cursor: pointer;
+		line-height: 1;
+	}
+
+	#secondary-nav {
+		background-color: transparent;
+		position: relative;
+		top: -4.2rem;
+		left: 0;
+		height: 0;
+		padding: 0;
+	}
+
+	header {
+		padding-bottom: 8.5rem;
+		border-bottom: 3px solid #281C15;
+	}
+
+	#alt-promotext {
+		display: none;
+	}
+
+	footer > a {
+		width: 7rem;
+	}
+
+	footer {
+		padding: 1rem 10%;
+	}
+	
+		/* Footer */
+	footer ul {
+		display: flex;
+		flex-direction: horizontal;
+	}
+	
+	footer li {
+		margin-right: 2rem;
+	}
+	
+}
+/* -------------------------------------------------------------------------- */
+
+/* MEDIUM LAYOUT */
+/* Layout progresses to be a 'fullscreen design' but with scaled down elements */
+
+@media screen and (min-width: 60em) {
+    
+    /* Page grid
+    
+    Create a two-column, two-row grid. The two asides will be put in the first column, with sidebar-one in the first row and sidebar-two in the second row. The height of the first row will be set by the content of sidebar-one. The height of the second row will be flexible, so that it can extend down if needed. The main element will be in the second column and will span the rows created by the asides. */
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 50rem 1fr;
+		grid-template-rows: 0 15.6rem 0 1fr 9.5rem;
+        min-height: 100vh;
+    }
+    
+    header, body > a {
+        grid-column: 1 / 4;
+		grid-row: 1 / 3;
+        
+    }
+    
+    #main-menu {
+        grid-column: 1 / 4;
+		grid-row: 1;
+    }
+	
+	#secondary-nav {
+		grid-column: 1 / 4;
+		grid-row: 3;
+	}
+    
+    main {
+        width: 100%; /* Override width set above for single-column layout. */
+        grid-column: 2;
+        grid-row: 4;
+    }
+    
+    /* #sidebar-one { */
+        /* grid-column: 3; */
+        /* grid-row: 3; */
+        /* grid-row-height: auto; */
+    /* } */
+    
+    /* #sidebar-two { */
+        /* grid-column: 3; */
+        /* grid-row: 4; */
+    /* } */
+    
+    footer {
+        grid-column: 1 / 4;
+		grid-row: 5;
+    }
+
+    /* End of page grid */
+    
+
+    /* Other layout ------------------------------*/
+    
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+    
+	#site-title {
+		margin: 1.5rem 0 0 1.5rem;
+	}
+	
+    #main-menu {
+        position: absolute;
+        padding: 0;
+        transition: 0s;
+        max-width: 100%;
+		background-color: transparent;
+		visibility: visible;
+		height: auto;
+    }
+
+	#main-menu li, #main-menu ul {
+		border: none;
+	}
+	
+    #menu-button, .closebtn, #menu-button-b {
+        display: none;
+    }
+    
+    #main-menu ul {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0.25rem 1rem 0 0;
+    }
+    
+    #main-menu li {
+        margin-right: 0.5em;
+    }
+    
+    #main-menu li a {
+        padding: 0.5rem 0.25rem;
+        border: 1px solid transparent;
+    }
+
+    main {
+        padding: 2em 2em 2em 0;
+    }
+    
+    #site-title, #tagline {
+        text-align: left;
+    }
+    
+    #main-menu li:hover {
+        background-color: transparent;
+    }
+
+    #main-menu a:hover {
+        border: 1px solid #CFB199;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    
+    form#SearchForm_SearchForm {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    aside input[type=text], aside input[type=email], aside textarea {
+        width: 100%;
+    }
+            
+    /* Holder page pattern */
+    .holder-page-section {
+        flex-direction: row;
+    }
+    
+    .holder-page-section .section-content {
+        flex-basis: 67%;
+    }
+    
+    .holder-page-section .section-image {
+        flex-basis: 33%;
+    }
+	
+    #copyright-info {
+        display: block;
+    }
+
+}
+		
+/* ----------------------------------------------------------------------------- */
+
+
+/* LARGE LAYOUT */
+
+/* A three-column layout with a left-hand sidebar column, a central main column, and a right-hand sidebar column. */
+
+@media screen and (min-width: 88em) {
+
+    /* Page grid */    
+
+    body {        
+        grid-template-columns: 1fr 60rem 1fr;
+    }
+	
+	#main-menu ul {
+        margin-top: 2rem;
+    }
+	
+	#main-menu li {
+		margin: 0 1rem;
+	}
+	
+    /* header, #main-menu, footer { */
+        /* grid-column: 1 / span 5; */
+    /* } */
+    
+    /* main { */
+        /* grid-column: 3; */
+        /* grid-row: 3 / span 1; */
+        /* padding: 2em; */
+    /* } */
+    
+    /* #sidebar-one { */
+        /* grid-column: 2; */
+        /* grid-row: 3; */
+    /* } */
+
+    /* #sidebar-two { */
+        /* grid-column: 4; */
+        /* grid-row: 3; */
+    /* } */
+    
+    /* End of page grid */
+
+    
+    /* Other layout */
+
+	
+}
