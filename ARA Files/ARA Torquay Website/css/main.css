@@ -1,0 +1,91 @@
+/* RESET - Cancel some browser defaults to get consistent styling from one browser
+     to another. */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+/* -- DEFAULT MOBILE --------------------------------------------------- */
+
+header {
+    min-height: 7rem;
+    position: relative;
+}
+
+.main-logo {
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+}
+
+#banner {
+    width: 100%;
+}
+
+#banner-b {
+    display: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    display: flex;
+    color: #F5F1E3;
+    justify-content: space-between;
+    background-color: #050505;
+    align-items: center;
+    padding: 1rem 10%;
+    min-height: 5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F5F1E3;
+    min-width: 5rem;
+}
+
+/* RESPONSIVENESS */
+@media screen and (min-width: 60rem) {
+
+    #banner {
+        display: none;
+    }
+    
+    #banner-b {
+        display: block;
+    }
+
+    .main-logo, #banner-b img {
+        width: auto;
+        height: 10rem;
+    }
+
+    main {
+        position: relative;
+    }
+
+    #banner-b {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+}
