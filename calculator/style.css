@@ -1,0 +1,25 @@
+h1{
+    font-family:sans-serif;
+    color:#5abe5a;
+}
+
+section {
+    font-family: sans-serif;
+    width:fit-content;
+    color:#5abe5a;
+}
+
+input {
+    width: 150px;
+    color:#5abe5a;
+}
+
+h2{
+    font-family: sans-serif;
+    color:#5abe5a;
+}
+
+button {
+    width: 75px;
+    height: 50px;
+    color: black}

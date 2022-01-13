@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: darkslategrey;">
+    <header>
+        <h1>Basic ass calculator</h1>
+    </header>
+
+
+   <section id="calculator">
+    <form action="/index.html" method="get">
+        <label for="input-number">Input Number</label>
+        <br>
+        <input type="number" placeholder="0" id="input-number">        
+    </form>
+    <br>
+    <button type="button" id="btn-add">+</button>
+    <button type="button" id="btn-subtract">-</button>
+    <br>
+    <button type="button" id="btn-divide">/</button>
+    <button type="button" id="btn-multiply">*</button>
+   </section>
+
+    <section id="results">
+        <h2 id="current-calculation">0</h2>
+        <h2>Result: <span id="current-result">0</span></h2>
+    </section>
+
+    <section id="clear">
+        <button type="button" id="btn-clear">CLEAR</button>
+    </section>
+    <script src = "vendor.js"></script>
+    <script src = "app.js"></script>
+</body>
+
+</html>
