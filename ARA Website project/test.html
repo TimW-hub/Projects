@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Al's Old Games | Play and Learn</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <span id="menu-button" onclick="toggleNav()">&#9776;</span>
+        <div id="main-menu">
+            <ul>
+                <li>Home</li>
+                <li>Games</li>
+                <li>Systems</li>
+                <li>About Us</li>
+                <li>Contact</li>
+                <li>Blog</li>
+            </ul>
+            <span id="close-button" onclick="toggleNav()">&times;</span>
+            
+            <script>
+                function toggleNav() {
+                    // Set the width of the main menu to 100% of its parent, which then shows the menu.
+                    var element = document.getElementById("main-menu");
+                    element.classList.toggle("open");
+                }
+            </script>
+
+            <!-- <img src="images/hamburger.png" alt="Menu" id="hamburger-menu"> -->
+        </div>
+    </nav>
+
+
+</body>
+</html>

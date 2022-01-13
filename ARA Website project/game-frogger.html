@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Old, Retro, Games, Play, History, Big Al, Big Al's Old Games, Learn, Blog">
+    <meta name="description" content="Big Al's Old Games, Learn the history and play retro games selected by Big Al!">
+    <meta name="author" content="Timothy Williams">
+    <title>Big Al's Old Games | Frogger</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/game-system-info.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+</head>
+
+<body id="about-us">
+    <nav id="pacman-banner-left">
+        <span id="menu-button" onclick="toggleNav()">&#9776;</span>
+        <div id="main-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games-landing.html">Games</a></li>
+                <li><a href="systems-landing.html">Systems</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li id="pacman-banner-right"></li>
+            </ul>
+            <span id="close-button" onclick="toggleNav()">&times;</span>
+        </div>
+        <script>
+            function toggleNav() {
+                var element = document.getElementById("main-menu");
+                element.classList.toggle("open");
+            }
+        </script>
+    </nav>
+    <header>
+        <h1><span id="Big">Big</span> <span id="Al">Al's</span> <span id="Old">Old</span> <span id="Games">Games</span></h1>
+        <img src="images/big-al.png" alt="Big Al's Old Games">
+    </header>
+    <main>
+        <h2>Frogger <span class="highlight-main">1981</span></h2>
+        <div id="about-field">
+            <div id="display-box">
+                <video controls>
+                    <source src="media/frogger.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="images/frogger-atari-2600-front-cover.jpg" alt="Frogger cover art">
+            </div>
+            <h3>History</h3>
+            <p>Frogger (フロッガー, Furoggā) is a 1981 arcade action game developed by Konami and manufactured by Sega. In North America, it was released by Sega/Gremlin. The object of the game is to direct frogs to their homes one by one by crossing a busy road and navigating a river full of hazards.</p>
+            <p>Frogger was positively received as one of the greatest video games ever made and followed by several clones and sequels. By 2005, Frogger, in its various home video game incarnations, had sold 20 million copies worldwide. The game found its way into popular culture, including television and music.</p>   
+            <h3>Gameplay</h3>
+            <p>The objective of the game is to guide a frog to each of the empty "frog homes" at the top of the screen. The game starts with three, five, or seven frogs, depending on the settings used by the operator. Losing them all ends the game. The only player control is the 4-direction joystick used to navigate the frog; each push in a direction causes the frog to hop once in that direction. Frogger is either single-player or two players alternating.</p>
+            <p>The frog starts at the bottom of the screen, which contains a horizontal road occupied by cars, trucks, and bulldozers speeding along it. The player must guide the frog between opposing lanes of traffic to avoid becoming roadkill, which results in a loss of a life. After the road, there is a median strip separating the two major parts of the screen. The upper portion of the screen consists of a river with logs, alligators, and turtles, all moving horizontally across the screen. By jumping on swiftly moving logs and the backs of turtles and alligators, the player can guide their frog to safety. The player must avoid snakes, otters, and the open mouths of alligators. A brightly colored female frog is sometimes on a log and may be carried for bonus points. The top of the screen contains five "frog homes", which are the destinations for each frog. These sometimes contain insects (good) or lurking alligators (bad).</p>
+            <p>When all five frogs are in their homes, the game progresses to the next level with increased difficulty. After five levels, the game gets briefly easier before yet again getting progressively harder after each level. The player has 30 seconds to guide each frog into one of the homes; this timer resets whenever a life is lost or a frog reaches home safely.</p>
+            <br><br>
+            <h3 id="play-the-game">Play the Game!</h3>
+            <div class="image-container">
+                <a href="https://www.playretrogames.com/640-frogger">
+                    <img src="images/arcade-frogger-screen-play2.jpg" alt="Frogger" class="play-game">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>© Copyright 2021 <span class="footer-highlight">Big Al’s Old Games.</span></p>
+            <p>All rights reserved</p>
+        </div>
+        <div class="return">
+            <ul class="index-expanded">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/return-image-blue.png" alt="Return to Top" id="rtt-icon"></button>
+        </div>
+
+        <script>
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+    </footer>
+</body>
+</html>

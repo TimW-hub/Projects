@@ -1,0 +1,119 @@
+/* TYPOGRAPHY & FONT COLOURS*/
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    color: #41ead4;
+}
+
+label {
+    color: white;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.2rem;
+}
+
+main p {
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+.footer-highlight {
+    color: #41ead4;
+}
+
+body {
+    color: #fbff12;
+}
+
+.highlight-main {
+    color: white;
+}
+
+.see-more {
+    color: #ff206e;
+    display: inline-block;
+}
+
+.blog-post-field {
+    color: white;
+}
+
+.post-name-desc {
+    color: #41ead4;
+}
+
+/* ----TITLE---- */
+
+#Big {
+    color: #ff206e;
+}
+
+#Al {
+    color: #fbff12;
+}
+
+#Old {
+    color: #41ead4;
+}
+
+#Games {
+    color: white;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: #41ead4;
+    line-height: 1.2rem;
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 870px) {
+    main h2 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    h1 {
+        font-size: 64px;
+    }
+
+    #about-field {
+        font-size: 18px;
+    }
+}

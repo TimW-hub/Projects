@@ -1,0 +1,18 @@
+.blurb {
+    display: initial;
+}
+
+@media only screen and (min-width: 1050px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: minmax(1rem, 3rem) 1fr 1fr;
+    }
+
+    main h2 {
+        grid-column: 1 /4;
+    }
+
+    .blurb {
+        display: none;
+    }
+}
