@@ -1,0 +1,105 @@
+/* RESET - Cancel some browser defaults to get consistent styling from one browser
+     to another. */
+
+     html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+     
+    * {
+        box-sizing: border-box;
+    }
+
+html {
+    font-family: Arial;
+}
+
+header {
+    background-color: rgb(56, 56, 56);
+    height: 3rem;
+    padding: 0.8rem 0 0 2.5rem;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(138, 178, 252);
+}
+
+h1 {
+    padding-bottom: 1rem;
+}
+
+form {
+    padding: 4rem 0 1rem 4rem;
+}
+
+.text-inputs {
+    display: inline-block;
+}
+
+.text-inputs label{
+    display: block;
+    padding-bottom: 0.3rem;
+}
+
+#driving-speed, #speed-limit {
+    width: 7rem;
+    height: 2rem;
+    border: 1px solid lightgray;
+    border-radius: 0.25rem;
+}
+
+.radio-buttons {
+    margin-top: 0.5rem;
+    padding: 1rem 0;
+}
+
+.radio-buttons > input {
+    padding-right: 3rem;
+}
+
+#calculate-points {
+    width: 15rem;
+    height: 2.5rem;
+    border: 1px solid blue;
+    color: blue;
+    border-radius: 0.25rem;
+}
+
+#reset {
+    width: 15rem;
+    height: 2.5rem;
+    border: 1px solid red;
+    color: red;
+    border-radius: 0.25rem;
+}
+
+.answer-box {
+    margin-left: 6rem;
+    width: 40rem;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+.exit-button a {
+    text-decoration: none;
+}
+
+.green {
+    background-color: rgb(169, 253, 183);
+    border: 1px solid rgb(112, 192, 112);
+    color: rgb(7, 61, 12);
+}
+
+.error {
+    background-color: rgb(255, 242, 183);
+    border: 1px solid rgb(231, 218, 161);
+    color: saddlebrown;
+}
+
+.exit-button {
+    float: right;
+}
+
