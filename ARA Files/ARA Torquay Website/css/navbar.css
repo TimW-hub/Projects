@@ -1,0 +1,161 @@
+/* MAIN MENU - REST OF NAVBAR (THE USEFUL BIT */
+
+#main-menu ul {
+    list-style-type: none;
+	white-space: nowrap;
+}
+
+#main-menu a {
+    text-decoration: none;
+    display: block;
+}
+
+/* ------ Mobile Menu ------ */
+
+#main-menu {    
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    z-index: 10;
+    overflow: hidden;
+    padding-top: 2.75em; 
+    transition: 0.5s; 
+    max-width: 20em;   
+}
+
+#main-menu.open {
+    width: 100%;
+}
+
+#main-menu ul {
+	white-space: nowrap;
+}
+
+#main-menu li {
+    text-transform: uppercase;
+    border: 1px solid #1b9aaa;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+#main-menu a {
+    display: block;
+    padding: 0.5em 0.5em 0.5em 2em;
+    color: #000;
+    text-align: center;
+}
+
+.home a {
+    font-size: 2rem;
+    line-height: 0.8rem;
+    margin-right: 1.5rem;
+}
+
+#menu-button, #close-button {
+    cursor: pointer;
+    line-height: 1;
+}
+
+#menu-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+    padding: 0.25rem 0.5rem;
+}
+
+#close-button {
+    position: absolute;
+    top: 0;
+    right: 0.3rem;
+    font-size: 2.5rem;
+    padding: 0;
+    padding-left: 0.5rem;
+}
+
+/* -- HOVER ------------------------------------------------------------------------------------- -- */
+
+#close-button:hover, #menu-button:hover {
+    color: #e5e5e5;
+}
+
+/* COLOUR SCHEME */
+
+#main-menu {
+    background-color: #1b9aaa;
+}
+
+#main-menu a, #close-button {
+    color: white;
+}
+
+#main-menu li.current {
+	background-color: #2faebe;
+    border: 1px inset #dddbcb;
+    border-bottom: 1px solid #dddbcb;
+}
+
+#main-menu a.current {
+    color: #dddbcb;
+}
+
+#main-menu li:hover {
+	background-color: #2faebe;
+    border: 1px inset #2faebe;
+    border-bottom: 1px solid #dddbcb;
+}
+
+#main-menu a:hover {
+    color: #dddbcb;
+}
+
+
+
+/* RESPONSIVENESS */
+@media screen and (min-width: 60rem) {
+
+    #main-menu {
+        width: 100% !important;
+        max-width: 100%; 
+        height: auto;
+        transition: none;
+        position: relative;
+        padding: 0 3rem;
+    }
+
+    #menu-button, #close-button {
+        display: none;
+    }
+
+    #main-menu ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #main-menu li, #main-menu ul, #main-menu li.current, #main-menu li:hover {
+        border: none;
+        background-color: #1b9aaa;
+        padding: 0.4rem 0;
+    }
+
+    #main-menu a {
+        padding: 0.1rem 0;
+        border: 2px solid #1b9aaa;
+    }
+
+    #main-menu a:hover {
+        border-bottom: 2px solid #dddbcb;
+    }
+
+    .home {
+        padding: 0 !important;
+    }
+
+    .home a {
+        padding: 0.5rem 0 !important;
+    }
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+    <title>{{title}}</title>
+</head>
+<body>
+    <header>
+        <a href="">Home</a>
+    </header>
+    <form method="post" action="">
+        <h1>Demerit points calculator</h1>
+        <div>
+            <div class="text-inputs">
+                <label for="driving-speed">Driving speed</label>
+                <input type="text" name="driving-speed" id="driving-speed" autofocus>
+            </div>
+            <div class="text-inputs">
+                <label for="speed-limit">Speed limit</label>
+                <input type="text" name="speed-limit" id="speed-limit">
+            </div>
+        </div>
+
+        <div class="radio-buttons">
+            <label for="situation-applies">Towing trailer</label>
+            <input type="radio" name="situation-applies" id="towing-trailer">
+            <label for="situation-applies">School zone</label>
+            <input type="radio" name="situation-applies" id="school-zone">
+            <label for="situation-applies">Holiday period</label>
+            <input type="radio" name="situation-applies" id="holiday-period">
+        </div>
+
+        <input type="submit" name="action" id="calculate-points" value="Calculate points">
+        <input type="submit" name="action" id="reset" value="Reset" class="highlighted">
+        </form>
+
+        {% if demerit_value != "" %}
+        {% if demerit_value == 0 %}
+        <div class="answer-box green">
+        {% else %}
+        <div class="answer-box error">
+        {% endif %}
+            <p>{{response_text}}</p>
+            <p class="exit-button"><a href="">&#215</a></p>
+        </div>
+        {% endif %}
+</body>
+</html>

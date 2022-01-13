@@ -1,0 +1,219 @@
+/*----------------PACMAN------------------------------------------------------------------*/
+
+@keyframes pacman-scroll {
+    0% {background-position: 100% center;}
+    100% {background-position: 25.5% center;}
+}
+
+#pacman-banner-left {
+    background-image: url(../images/pacman-banner-v2.png);
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: pacman-scroll 4s linear infinite;
+}
+
+#pacman-banner-right {
+    display: none;
+}
+
+#banner-box-fs {
+    display: none;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+
+ul, ol {
+    list-style-position: inside;
+}
+
+/* MAIN MENU - REST OF NAVBAR (THE USEFUL BIT */
+
+#main-menu ul {
+    list-style-type: none;
+	white-space: nowrap;
+}
+
+#main-menu a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 1em;
+}
+
+/* ------ Mobile Menu ------ */
+
+#main-menu {    
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    z-index: 10;
+    overflow: hidden;
+    padding-top: 2.75em; 
+    transition: 0.5s; 
+    max-width: 20em;   
+}
+
+#main-menu.open {
+    width: 100%;
+}
+
+#main-menu ul {
+	white-space: nowrap;
+}
+
+#main-menu li {
+    line-height: 1.2;
+    text-transform: uppercase;
+    border: 3px solid #0c0f0a;
+    border-bottom: 3px solid #ff206e;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#main-menu a {
+    display: block;
+    padding: 0.5em 0.5em 0.5em 2em;
+    color: #000;
+}
+
+#menu-button, #close-button {
+    cursor: pointer;
+    line-height: 1;
+    background-color: #0c0f0a;
+    border-left: 1px solid grey;
+}
+
+#menu-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 4rem;
+    padding: 0.25rem 0.5rem;
+    border-bottom: 3px solid #ff206e;
+}
+
+#close-button {
+    position: absolute;
+    top: 0;
+    right: 0.3rem;
+    font-size: 2.5rem;
+    padding: 0;
+    padding-left: 0.5rem;
+}
+
+#close-button:hover, #menu-button:hover {
+    color: white;
+}
+#menu-button:hover {
+    border: 3px inset #3d3d3d;
+    border-bottom: 3px solid white;
+}
+/* COLOUR SCHEME */
+
+#main-menu {
+    background-color: #0c0f0a;
+    color: #ff206e;
+}
+
+#main-menu a, #close-button {
+    color: #ff206e;
+}
+
+#main-menu li.current {
+	background-color: #ff206e;
+    border: 3px inset #ff206e;
+    border-bottom: 3px solid white;
+}
+
+#main-menu a.current {
+    color: white;
+}
+
+#main-menu li:hover {
+	background-color: #ff206e;
+    border: 3px inset #ff206e;
+    border-bottom: 3px solid white;
+}
+
+#main-menu a:hover {
+    color: white;
+}
+
+/* RESPONSIVENESS */
+@media screen and (min-width: 870px) {
+    
+    /* GRID */
+    
+    #main-menu {
+        grid-column: 1 / 4;
+    }
+    
+    /* MAIN MENU  over-ride---------------------------------------------------------------*/
+    
+    #main-menu ul {
+        display: flex;
+    }
+    
+    #main-menu {
+        position: static; 
+        width: 100% !important;
+        max-width: 100%; 
+        height: auto;
+        transition: none;
+        padding-top: 0;
+    }
+
+    #main-menu li.current {
+        background-color: #ff206e;
+        border: 3px solid white;
+    }
+
+    #main-menu a.current {
+        color: white;
+    }
+
+    #main-menu li:hover {
+        background-color: #ff206e;
+        border: 3px solid white;
+    }
+
+    #main-menu a:hover {
+    color: white;
+    }
+
+    #main-menu a {
+        display: block;
+        padding: 0.8em 0 0.8em 0;
+        text-align: center;
+    }
+
+    #main-menu li {
+    border: 3px solid #ff206e;
+    background-color: #0c0f0a;
+    height: 74px;
+    width: 140px;
+    }
+
+    #menu-button, #close-button {
+        display: none;
+    }
+
+    /* BANNER BOX -------------------------------------------------------------------------------- */
+
+    #banner-box {
+        display: none;
+    }
+
+    /* PACMAN RETURNS */
+
+    #pacman-banner-right {
+        display: block;
+        flex-grow: 3;
+        background-image: url(../images/pacman-banner-v2.png);
+        background-position: 0px 0px;
+        background-repeat: repeat-x;
+        animation: pacman-scroll 6s linear infinite;
+    }
+}

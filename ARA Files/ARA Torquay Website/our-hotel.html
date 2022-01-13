@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Exmouth View Hotel">
+    <meta name="description" content="Welcome to the Exmouth View Hotel. Information about the hotel and Torquay where it's located.">
+    <meta name="author" content="Timothy Williams">
+    <title>Exmouth View Hotel | Homepage</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@600;700&family=Jost&family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo-new2.PNG" alt="Exmouth view hotel logo" class="main-logo">
+        <img src="images/hotel images/babbacombe bay 2-new.jpg" id="banner">
+    </header>
+    <nav>
+        <span id="menu-button" onclick="toggleNav()">&#9776;</span>
+        <div id="main-menu">
+            <ul>
+                <li class="current home"><a href="index.html" class="current">&#x2302;</a></li>
+                <li><a href="torquay.html">TORQUAY</a></li>
+                <li><a href="#">PROMOTIONS</a></li>
+                <li><a href="our-hotel.html">OUR HOTEL</a></li>
+                <li><a href="attractions.html">ATTRACTIONS</a></li>
+                <li><a href="#">RESTAURANT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+            <span id="close-button" onclick="toggleNav()">&times;</span>
+        </div>
+        <script>
+            function toggleNav() {
+                var element = document.getElementById("main-menu");
+                element.classList.toggle("open");
+            }
+        </script>
+    </nav>
+
+    <main>
+        <div id="banner-b">
+        <img src="images/hotel images/babbacombe bay 2.jpg">
+        </div>
+        <h2>Our Hotel</h2>
+        <h3> See below a list of images from the website</h3>
+        <div id="hotel-images">      
+            <img src="images/dancing photos/x1.jpg">
+            <img src="images/dancing photos/x10.jpg">
+            <img src="images/dancing photos/x14.jpg">
+            <img src="images/dancing photos/x2.jpg">
+        </div>
+        </main>
+
+    <footer>
+        <p>&#169; 2021 Exmouth View Hotel | All Rights Reserved</p>
+        <a href="/"><p>Contact Us</p></a>
+    </footer>
+</body>

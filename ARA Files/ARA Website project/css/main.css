@@ -1,0 +1,470 @@
+/* RESET - Cancel some browser defaults to get consistent styling from one browser
+     to another. */
+
+     html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+     
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+    }
+
+/* ---Colour & Background--- */
+
+body {
+    background-image: url(../images/wp2857052-black-hd-wallpaper-texture.jpg);
+    background-size: 1440px ;
+}
+
+#index-background {
+    border-top: 3px dashed #FBFF12;
+    background: rgba(12, 15, 10, 0.80);
+}
+
+aside, main {
+    border: 3px dashed #FBFF12;
+    background: rgba(12, 15, 10, 0.95);
+}
+
+.blog-post-field {
+    border: 1px solid #ff206e;
+}
+
+.game-window {
+    border: 1px solid #ff206e;
+    background-color: black;
+}
+
+footer {
+    background-color: #0c0f0a;
+    border-top: 3px dashed #FBFF12;
+}
+
+/* ---Grid Layout--- */
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 74px 134px 1fr 90px;
+}
+
+nav {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+header {
+    grid-row: 2;
+}
+
+#index-background, main {
+    grid-row: 3;
+}
+
+footer {
+    grid-row: 4;
+}
+
+/* ---Flex Layout--- */
+
+nav, header, .blog-post-heading, footer {
+    display: flex;
+}
+
+/* ---Whitespace--- */
+
+h1 {
+    min-width: 218px;
+}
+
+main {
+    padding: 1rem;
+}
+
+header {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+header img {
+    max-width: 105px;
+    max-height: 105px;
+    margin-left: 0.5rem;
+}
+
+aside, main {
+    margin: 1rem;
+}
+
+#index-background {
+    padding-bottom: 1rem;
+}
+
+.blog-container {
+    margin: 1rem;
+}
+
+h2 {
+    padding-bottom: 1rem;
+}
+
+main p {
+    padding-bottom: 1.5rem;
+}
+
+.game-window {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+main img {
+    height: 100%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+
+.blog-post-field {
+    padding: 0.5rem;
+}
+
+.blog-post-heading {
+    padding-bottom: 0.5rem;
+}
+
+.post-name-desc {
+    padding-top: 0.5rem;
+}
+
+.post-img-desc {
+    width: 42px;
+    height: 42px;
+    background-color: blue;
+    border-radius: 21px;
+    margin: 0 0 0.5rem 1rem;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.highlight-main {
+    display: inline-block;
+}
+
+footer {
+    padding: 0 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rtt-icon, #rtt-icon-yellow {
+    width: 60px;
+}
+
+button {
+    background-color: transparent;
+    border-style: none;
+}
+
+/* ---Responsive--- */
+
+.see-more:hover {
+    color: #41ead4;
+}
+
+.return a:hover {
+    color: #FBFF12;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+  
+.image-container:hover .overlay {
+opacity: 0.3;
+}
+
+#rtt-icon:hover {
+    filter: hue-rotate(260deg);
+}
+
+header img {
+    display: none;
+}
+
+main img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 364px) {
+    header img {
+        display:block;
+    }
+}
+     
+@media only screen and (min-width: 310px) {
+    main img {
+        width: initial;
+    }
+}
+
+ .index-expanded {
+    display: none;
+}
+
+.menu-game {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+#index-blog-large {
+    display: none;
+}
+
+@media only screen and (min-width: 516px) {
+    h1 {
+        margin-top: 1.5rem;
+    }
+}
+
+/* ---Mid Size--- */
+/*-------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 600px) {
+
+    /* ---RESET--- */
+
+    .index-expanded {
+        display: block;
+    }
+
+    /* ---Grid Layout--- */
+
+    body {
+        grid-template-columns: 1fr 20fr 1fr;
+    }
+
+    main {
+        grid-column: 2;
+    }
+
+    nav, header, footer {
+        grid-column: 1 / 4;
+    }
+
+     #index-background {
+        display: grid;
+        grid-column: 1/4;
+    }
+
+    #index-background main, #index-background aside {
+        grid-column: 2;
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: minmax(1rem, 3rem) 1fr;
+    }
+
+    form {
+        grid-column: 1 / 3;
+    }
+
+    main h2 {
+        grid-column: 1/3;
+    }
+
+    /* ---Flex Layout--- */
+
+    aside {
+        display: flex;
+    }
+
+    #blog {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ---Whitespace--- */
+
+    .menu-game {
+        padding: 1rem;
+    }
+
+    main p {
+        padding-bottom: 0.5rem;
+    }
+
+    footer p {
+        display: inline-block;
+    }
+
+    footer .return {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    footer ul {
+        margin-right: 2.5rem;
+    }
+
+    footer li {
+        padding: 0.125rem;
+    }
+
+    footer {
+        border-top: none;
+    }
+
+    header {
+        margin: 0 auto;
+    }
+} 
+
+/* ----------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 870px) {
+
+    .menu-game {
+        padding: 1rem 1rem 0 1rem;
+        border: 1px solid #41ead4;
+        margin: 1rem;
+        max-width: inherit;
+    }
+    .game-window {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0.5rem;
+    }
+
+    .image-container {
+        height: 70%;
+    }
+    
+    main img {
+        width: 100%;
+        display: block;
+        margin: auto auto;
+    }
+
+    .blog-post-field, .blog-post-heading {
+        border: 1px solid #41ead4;
+        background-color: rgb(12, 15, 10, 0.9);
+        margin-bottom: 0.2rem;
+    }
+
+    .blog-post-heading {
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    header img {
+        margin-left: 1.5rem;
+    }
+}
+
+/* ---Full Screen--- */
+
+@media only screen and (min-width: 1100px) {
+
+    /* visibility */
+
+    #index-background {
+        background-color: inherit;
+        border: none;
+    }
+
+    .blurb {
+        display: none;
+    }
+
+    #index-blog-small {
+        display: none;
+    }
+
+    #index-blog-large {
+        display: block;
+    }
+
+    #index-blog-large img {
+        float: right;
+        width: 30%;
+    }
+
+    /* ---Grid Layout--- */
+
+    body {
+        grid-template-columns: 1fr 66rem 1fr;
+    }
+
+    #index-background {
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: 25rem 41rem;
+    }
+
+    #index-background aside {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #index-background main {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    /* ---Flex Layout--- */
+
+    aside {
+        flex-direction: column;
+    }
+
+    /* ---Whitespace--- */
+
+    main, aside {
+        margin: 0.5rem;
+    }
+
+}
+
+/* Full Screen */
+
+@media only screen and (min-width: 1272px) {
+    .blurb {
+        display: initial !important;
+    }
+
+    body {
+        grid-template-columns: 1fr 78rem 1fr;
+    }
+
+    #index-background {
+        grid-template-columns: 25rem 53rem;
+    }
+}

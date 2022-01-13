@@ -1,0 +1,39 @@
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Halant', serif;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+#site-title {
+    font-family: 'Yellowtail', cursive;
+    font-size: 3rem;
+    border: 1px solid white;
+}
+
+#title-secondary {
+    font-size: 2rem;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* RESPONSIVENESS */
+@media screen and (min-width: 60rem) {
+    h2 {
+        color: white;
+        text-align: left;
+        padding-left: 2.5rem;
+        padding-top: 1.75rem;
+        margin-bottom: 7rem;
+    }
+}
