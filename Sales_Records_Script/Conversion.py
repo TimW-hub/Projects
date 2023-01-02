@@ -3,6 +3,7 @@
 # Extra
 # Check at this step if conversion was successful and seperate out failed csvs w/ reference PDFS
 # https://www.temukasales.co.nz/sales/past?r=10
+#Estimated 16 hrs
 
 # Seperated by type of cattle
 # Monday/Thursdays standard dates
@@ -44,6 +45,8 @@ def table_type_identify(pdf_output):
     # if for loop completes return confirmation that re
     return df_out
 
+#--------------------------------------------------------------------------------------------------------------------------------
+
 def table_format(df_tables):
     '''Takes PDF outputs and converts to ideal CSV column layout,
         cleans up data within table and removes unecessary rows on a per document basis
@@ -65,6 +68,7 @@ def combine_tables(formatted_table_list):
     #error handling
 
 
+#--------------------------------------------------------------------------------------------------------------------------------------
 import os
 from os.path import isfile, join
 import camelot
